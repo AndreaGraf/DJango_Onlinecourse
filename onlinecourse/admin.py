@@ -24,7 +24,7 @@ class LessonAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 class QuestionAdmin(admin.ModelAdmin):
-    inlines[CoiceInline]
+    inlines = [CoiceInline]
     list_display = ['content']
             
 admin.site.register(Question,QuestionAdmin)
